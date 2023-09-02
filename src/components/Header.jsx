@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <header className="w-full bg-gray-800 py-3 fixed top-0 right-0">
-            <div className="justify-between px-5 mx-auto lg:max-w-7xl md:items-center md:flex">
+            <div className="w-full justify-between px-5 mx-auto lg:max-w-7xl md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
                         <Link to='/'>
