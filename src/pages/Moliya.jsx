@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import data from '../data';
 import { Link } from 'react-router-dom';
 
