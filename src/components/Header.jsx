@@ -6,7 +6,7 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <header className="w-full bg-gray-800 py-3 fixed top-0 right-0">
+        <header className="w-full bg-gray-800 py-3 fixed top-0 right-0 z-10">
             <div className="w-full justify-between px-5 mx-auto lg:max-w-7xl md:items-center md:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
