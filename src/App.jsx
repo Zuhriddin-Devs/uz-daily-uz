@@ -13,6 +13,7 @@ import Texnologiyalar from './pages/Texnologiyalar';
 import Madaniyat from './pages/Madaniyat';
 import Sport from './pages/Sport';
 import Turizm from './pages/Turizm';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/Madaniyat' element={<Madaniyat />} />
         <Route path='/Sport' element={<Sport />} />
         <Route path='/Turizm' element={<Turizm />} />
+        <Route path='*' element={<PageNotFound />} />
       </Route>
     )
   );
