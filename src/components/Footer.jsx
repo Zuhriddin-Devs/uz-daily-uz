@@ -14,12 +14,12 @@ function Footer() {
     ];
 
     return (
-        <footer className="w-full bg-gray-800 py-28">
+        <footer className="w-full bg-gray-800 py-20">
             <div className="w-full max-w-7xl mx-auto px-5">
                 {/* footer div all */}
                 <div className="flex justify-between flex-col md:flex-row items-center md:items-start md:gap-[5rem] text-left">
                     {/* logo side */}
-                    <div className="flex flex-col w-1/2 md:p-0 py-5 gap-8">
+                    <div className="flex flex-col w-1/2 md:p-0 py-5 gap-8 mb-5 md:mb-0">
                         <Link to='/'>
                             <img
                                 src={logo}
