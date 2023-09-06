@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data';
+import data from '../assets/data';
 import { Link } from 'react-router-dom';
 
 const Madaniyat = () => {
