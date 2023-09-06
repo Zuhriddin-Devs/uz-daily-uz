@@ -1,86 +1,86 @@
 // 1) import Uzbekistan page images
-import UzbekistanPageImage1 from './assets/img/Uzbekistan-page-image-1.jpg';
-import UzbekistanPageImage2 from './assets/img/Uzbekistan-page-image-2.jpg';
-import UzbekistanPageImage3 from './assets/img/Uzbekistan-page-image-3.jpg';
-import UzbekistanPageImage4 from './assets/img/Uzbekistan-page-image-4.jpg';
-import UzbekistanPageImage5 from './assets/img/Uzbekistan-page-image-5.jpg';
-import UzbekistanPageImage6 from './assets/img/Uzbekistan-page-image-6.jpg';
-import UzbekistanPageImage7 from './assets/img/Uzbekistan-page-image-7.jpg';
-import UzbekistanPageImage8 from './assets/img/Uzbekistan-page-image-8.jpg';
-import UzbekistanPageImage9 from './assets/img/Uzbekistan-page-image-9.jpg';
-import UzbekistanPageImage10 from './assets/img/Uzbekistan-page-image-10.jpg';
+import UzbekistanPageImage1 from './img/Uzbekistan-page-image-1.jpg';
+import UzbekistanPageImage2 from './img/Uzbekistan-page-image-2.jpg';
+import UzbekistanPageImage3 from './img/Uzbekistan-page-image-3.jpg';
+import UzbekistanPageImage4 from './img/Uzbekistan-page-image-4.jpg';
+import UzbekistanPageImage5 from './img/Uzbekistan-page-image-5.jpg';
+import UzbekistanPageImage6 from './img/Uzbekistan-page-image-6.jpg';
+import UzbekistanPageImage7 from './img/Uzbekistan-page-image-7.jpg';
+import UzbekistanPageImage8 from './img/Uzbekistan-page-image-8.jpg';
+import UzbekistanPageImage9 from './img/Uzbekistan-page-image-9.jpg';
+import UzbekistanPageImage10 from './img/Uzbekistan-page-image-10.jpg';
 
 // 2) import Iqtisod page images
-import IqtisodPageImage1 from './assets/img/Iqtisod-page-image-1.jpg';
-import IqtisodPageImage2 from './assets/img/Iqtisod-page-image-2.jpg';
-import IqtisodPageImage3 from './assets/img/Iqtisod-page-image-3.jpg';
-import IqtisodPageImage4 from './assets/img/Iqtisod-page-image-4.jpg';
-import IqtisodPageImage5 from './assets/img/Iqtisod-page-image-5.jpg';
-import IqtisodPageImage6 from './assets/img/Iqtisod-page-image-6.jpg';
-import IqtisodPageImage7 from './assets/img/Iqtisod-page-image-7.jpg';
-import IqtisodPageImage8 from './assets/img/Iqtisod-page-image-8.jpg';
-import IqtisodPageImage9 from './assets/img/Iqtisod-page-image-9.jpg';
-import IqtisodPageImage10 from './assets/img/Iqtisod-page-image-10.jpg';
+import IqtisodPageImage1 from './img/Iqtisod-page-image-1.jpg';
+import IqtisodPageImage2 from './img/Iqtisod-page-image-2.jpg';
+import IqtisodPageImage3 from './img/Iqtisod-page-image-3.jpg';
+import IqtisodPageImage4 from './img/Iqtisod-page-image-4.jpg';
+import IqtisodPageImage5 from './img/Iqtisod-page-image-5.jpg';
+import IqtisodPageImage6 from './img/Iqtisod-page-image-6.jpg';
+import IqtisodPageImage7 from './img/Iqtisod-page-image-7.jpg';
+import IqtisodPageImage8 from './img/Iqtisod-page-image-8.jpg';
+import IqtisodPageImage9 from './img/Iqtisod-page-image-9.jpg';
+import IqtisodPageImage10 from './img/Iqtisod-page-image-10.jpg';
 
 // 3) import Moliya page images
-import MoliyaPageImage1 from './assets/img/Moliya-page-image-1.jpg';
-import MoliyaPageImage2 from './assets/img/Moliya-page-image-2.jpg';
-import MoliyaPageImage3 from './assets/img/Moliya-page-image-3.jpg';
-import MoliyaPageImage4 from './assets/img/Moliya-page-image-4.jpg';
-import MoliyaPageImage5 from './assets/img/Moliya-page-image-5.jpg';
-import MoliyaPageImage6 from './assets/img/Moliya-page-image-6.jpg';
-import MoliyaPageImage7 from './assets/img/Moliya-page-image-7.jpg';
-import MoliyaPageImage8 from './assets/img/Moliya-page-image-8.jpg';
-import MoliyaPageImage9 from './assets/img/Moliya-page-image-9.jpg';
-import MoliyaPageImage10 from './assets/img/Moliya-page-image-10.jpg';
+import MoliyaPageImage1 from './img/Moliya-page-image-1.jpg';
+import MoliyaPageImage2 from './img/Moliya-page-image-2.jpg';
+import MoliyaPageImage3 from './img/Moliya-page-image-3.jpg';
+import MoliyaPageImage4 from './img/Moliya-page-image-4.jpg';
+import MoliyaPageImage5 from './img/Moliya-page-image-5.jpg';
+import MoliyaPageImage6 from './img/Moliya-page-image-6.jpg';
+import MoliyaPageImage7 from './img/Moliya-page-image-7.jpg';
+import MoliyaPageImage8 from './img/Moliya-page-image-8.jpg';
+import MoliyaPageImage9 from './img/Moliya-page-image-9.jpg';
+import MoliyaPageImage10 from './img/Moliya-page-image-10.jpg';
 
 // 4) import Texnologiyalar page images
-import TexnologiyalarPageImage1 from './assets/img/Texnologiyalar-page-image-1.jpg';
-import TexnologiyalarPageImage2 from './assets/img/Texnologiyalar-page-image-2.jpg';
-import TexnologiyalarPageImage3 from './assets/img/Texnologiyalar-page-image-3.jpg';
-import TexnologiyalarPageImage4 from './assets/img/Texnologiyalar-page-image-4.jpg';
-import TexnologiyalarPageImage5 from './assets/img/Texnologiyalar-page-image-5.jpg';
-import TexnologiyalarPageImage6 from './assets/img/Texnologiyalar-page-image-6.jpg';
-import TexnologiyalarPageImage7 from './assets/img/Texnologiyalar-page-image-7.jpg';
-import TexnologiyalarPageImage8 from './assets/img/Texnologiyalar-page-image-8.jpg';
-import TexnologiyalarPageImage9 from './assets/img/Texnologiyalar-page-image-9.jpg';
-import TexnologiyalarPageImage10 from './assets/img/Texnologiyalar-page-image-10.jpg';
+import TexnologiyalarPageImage1 from './img/Texnologiyalar-page-image-1.jpg';
+import TexnologiyalarPageImage2 from './img/Texnologiyalar-page-image-2.jpg';
+import TexnologiyalarPageImage3 from './img/Texnologiyalar-page-image-3.jpg';
+import TexnologiyalarPageImage4 from './img/Texnologiyalar-page-image-4.jpg';
+import TexnologiyalarPageImage5 from './img/Texnologiyalar-page-image-5.jpg';
+import TexnologiyalarPageImage6 from './img/Texnologiyalar-page-image-6.jpg';
+import TexnologiyalarPageImage7 from './img/Texnologiyalar-page-image-7.jpg';
+import TexnologiyalarPageImage8 from './img/Texnologiyalar-page-image-8.jpg';
+import TexnologiyalarPageImage9 from './img/Texnologiyalar-page-image-9.jpg';
+import TexnologiyalarPageImage10 from './img/Texnologiyalar-page-image-10.jpg';
 
 // 5) import Madaniyat page images
-import MadaniyatPageImage1 from './assets/img/Madaniyat-page-image-1.jpg';
-import MadaniyatPageImage2 from './assets/img/Madaniyat-page-image-2.jpg';
-import MadaniyatPageImage3 from './assets/img/Madaniyat-page-image-3.jpg';
-import MadaniyatPageImage4 from './assets/img/Madaniyat-page-image-4.jpg';
-import MadaniyatPageImage5 from './assets/img/Madaniyat-page-image-5.jpg';
-import MadaniyatPageImage6 from './assets/img/Madaniyat-page-image-6.jpg';
-import MadaniyatPageImage7 from './assets/img/Madaniyat-page-image-7.jpg';
-import MadaniyatPageImage8 from './assets/img/Madaniyat-page-image-8.jpg';
-import MadaniyatPageImage9 from './assets/img/Madaniyat-page-image-9.jpg';
-import MadaniyatPageImage10 from './assets/img/Madaniyat-page-image-10.jpg';
+import MadaniyatPageImage1 from './img/Madaniyat-page-image-1.jpg';
+import MadaniyatPageImage2 from './img/Madaniyat-page-image-2.jpg';
+import MadaniyatPageImage3 from './img/Madaniyat-page-image-3.jpg';
+import MadaniyatPageImage4 from './img/Madaniyat-page-image-4.jpg';
+import MadaniyatPageImage5 from './img/Madaniyat-page-image-5.jpg';
+import MadaniyatPageImage6 from './img/Madaniyat-page-image-6.jpg';
+import MadaniyatPageImage7 from './img/Madaniyat-page-image-7.jpg';
+import MadaniyatPageImage8 from './img/Madaniyat-page-image-8.jpg';
+import MadaniyatPageImage9 from './img/Madaniyat-page-image-9.jpg';
+import MadaniyatPageImage10 from './img/Madaniyat-page-image-10.jpg';
 
 // 6) import Sport page images
-import SportPageImage1 from './assets/img/Sport-page-image-1.jpg';
-import SportPageImage2 from './assets/img/Sport-page-image-2.jpg';
-import SportPageImage3 from './assets/img/Sport-page-image-3.jpg';
-import SportPageImage4 from './assets/img/Sport-page-image-4.jpg';
-import SportPageImage5 from './assets/img/Sport-page-image-5.jpg';
-import SportPageImage6 from './assets/img/Sport-page-image-6.jpg';
-import SportPageImage7 from './assets/img/Sport-page-image-7.jpg';
-import SportPageImage8 from './assets/img/Sport-page-image-8.jpg';
-import SportPageImage9 from './assets/img/Sport-page-image-9.jpg';
-import SportPageImage10 from './assets/img/Sport-page-image-10.jpg';
+import SportPageImage1 from './img/Sport-page-image-1.jpg';
+import SportPageImage2 from './img/Sport-page-image-2.jpg';
+import SportPageImage3 from './img/Sport-page-image-3.jpg';
+import SportPageImage4 from './img/Sport-page-image-4.jpg';
+import SportPageImage5 from './img/Sport-page-image-5.jpg';
+import SportPageImage6 from './img/Sport-page-image-6.jpg';
+import SportPageImage7 from './img/Sport-page-image-7.jpg';
+import SportPageImage8 from './img/Sport-page-image-8.jpg';
+import SportPageImage9 from './img/Sport-page-image-9.jpg';
+import SportPageImage10 from './img/Sport-page-image-10.jpg';
 
 // 7) import Turizm page images
-import TurizmPageImage1 from './assets/img/Turizm-page-image-1.jpg';
-import TurizmPageImage2 from './assets/img/Turizm-page-image-2.jpg';
-import TurizmPageImage3 from './assets/img/Turizm-page-image-3.jpg';
-import TurizmPageImage4 from './assets/img/Turizm-page-image-4.jpg';
-import TurizmPageImage5 from './assets/img/Turizm-page-image-5.jpg';
-import TurizmPageImage6 from './assets/img/Turizm-page-image-6.jpg';
-import TurizmPageImage7 from './assets/img/Turizm-page-image-7.jpg';
-import TurizmPageImage8 from './assets/img/Turizm-page-image-8.jpg';
-import TurizmPageImage9 from './assets/img/Turizm-page-image-9.jpg';
-import TurizmPageImage10 from './assets/img/Turizm-page-image-10.jpg';
+import TurizmPageImage1 from './img/Turizm-page-image-1.jpg';
+import TurizmPageImage2 from './img/Turizm-page-image-2.jpg';
+import TurizmPageImage3 from './img/Turizm-page-image-3.jpg';
+import TurizmPageImage4 from './img/Turizm-page-image-4.jpg';
+import TurizmPageImage5 from './img/Turizm-page-image-5.jpg';
+import TurizmPageImage6 from './img/Turizm-page-image-6.jpg';
+import TurizmPageImage7 from './img/Turizm-page-image-7.jpg';
+import TurizmPageImage8 from './img/Turizm-page-image-8.jpg';
+import TurizmPageImage9 from './img/Turizm-page-image-9.jpg';
+import TurizmPageImage10 from './img/Turizm-page-image-10.jpg';
 
 const data = () => [
     {
@@ -159,7 +159,7 @@ const data = () => [
         id: 9,
         image: UzbekistanPageImage9,
         alt: "Uzbekistan-page-image-9",
-        title: "Prezident kitbsevar bolalar bilan suhbatlashdi",
+        title: "Prezident kitobsevar bolalar bilan suhbatlashdi",
         about: "Prezident Shavkat Mirziyoyev yangilangan Respublika bolalar kutubxonasini borib ko'rdi.",
         date: "30/08/2023",
         detail: "Batafsil ➡️",
