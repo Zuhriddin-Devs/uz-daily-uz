@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
                 <div>
                     <nav
-                        className={`flex justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                        className={`w-full h-screen flex justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 md:h-auto ${navbar ? "block" : "hidden"
                             }`}
                     >
                         <ul className="text-white text-base font-medium items-center justify-center space-y-8 md:flex md:space-x-4 md:space-y-0">
