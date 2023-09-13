@@ -55,19 +55,19 @@ function Footer() {
                         <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">Biz haqimizda</p>
 
                         <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
-                            Biz haqimizda
+                            About Us
                         </Link>
                         <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
-                            Foydalanish sharti
+                            Condition of Use
                         </Link>
                         <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
-                            Maxfiylik siyosati
+                            Privacy Policy
                         </Link>
                         <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
-                            Gadjetlar
+                            Gadgets
                         </Link>
                         <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
-                            Reklama
+                            Advertisement
                         </Link>
                     </div>
 
