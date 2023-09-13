@@ -58,25 +58,25 @@ const Header = () => {
                     >
                         <ul className="text-white text-base font-medium items-center justify-center space-y-8 md:flex md:space-x-4 md:space-y-0">
                             <li>
-                                <NavLink to='/'>O'zbekiston</NavLink>
+                                <NavLink to='/' className='hover:text-red-500'>O'zbekiston</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Iqtisod'>Iqtisod</NavLink>
+                                <NavLink to='/Iqtisod' className='hover:text-red-500'>Iqtisod</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Moliya'>Moliya</NavLink>
+                                <NavLink to='/Moliya' className='hover:text-red-500'>Moliya</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Texnologiyalar'>Texnologiyalar</NavLink>
+                                <NavLink to='/Texnologiyalar' className='hover:text-red-500'>Texnologiyalar</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Madaniyat'>Madaniyat</NavLink>
+                                <NavLink to='/Madaniyat' className='hover:text-red-500'>Madaniyat</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Sport'>Sport</NavLink>
+                                <NavLink to='/Sport' className='hover:text-red-500'>Sport</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Turizm'>Turizm</NavLink>
+                                <NavLink to='/Turizm' className='hover:text-red-500'>Turizm</NavLink>
                             </li>
                         </ul>
                     </nav>
