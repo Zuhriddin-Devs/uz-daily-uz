@@ -54,19 +54,19 @@ function Footer() {
                     <div className="flex flex-col gap-8 relative">
                         <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">Biz haqimizda</p>
 
-                        <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
+                        <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
                             About Us
                         </Link>
-                        <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
+                        <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
                             Condition of Use
                         </Link>
-                        <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
+                        <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
                             Privacy Policy
                         </Link>
-                        <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
+                        <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
                             Gadgets
                         </Link>
-                        <Link to='#' className="text-lg hover:text-red-500 text-white font-medium">
+                        <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
                             Advertisement
                         </Link>
                     </div>

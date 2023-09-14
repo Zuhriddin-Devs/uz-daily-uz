@@ -13,6 +13,11 @@ import Texnologiyalar from './pages/Texnologiyalar';
 import Madaniyat from './pages/Madaniyat';
 import Sport from './pages/Sport';
 import Turizm from './pages/Turizm';
+import AboutUs from './pages/AboutUs';
+import ConditionOfUse from './pages/ConditionOfUse';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Gadgets from './pages/Gadgets';
+import Advertisement from './pages/Advertisement';
 import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
@@ -26,6 +31,11 @@ const App = () => {
         <Route path='/Madaniyat' element={<Madaniyat />} />
         <Route path='/Sport' element={<Sport />} />
         <Route path='/Turizm' element={<Turizm />} />
+        <Route path='/About Us' element={<AboutUs />} />
+        <Route path='/Condition Of Use' element={<ConditionOfUse />} />
+        <Route path='/Privacy Policy' element={<PrivacyPolicy />} />
+        <Route path='/Gadgets' element={<Gadgets />} />
+        <Route path='/Advertisement' element={<Advertisement />} />
         <Route path='*' element={<PageNotFound />} />
       </Route>
     )
