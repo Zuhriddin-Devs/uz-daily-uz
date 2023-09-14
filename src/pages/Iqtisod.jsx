@@ -7,9 +7,9 @@ const Iqtisod = () => {
         <div className="w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5">
             <div className='mb-7 sm:w-150% sm:mb-0'>
                 <div className='mb-8'>
-                    <h1 className='text-black text-2xl font-medium text-center border-b-2 border-red-500 pb-5 sm:text-start'>
+                    <h3 className='text-black text-2xl font-medium text-center border-b-2 border-red-500 pb-5 sm:text-start'>
                         Iqtisod
-                    </h1>
+                    </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-7'>
@@ -33,9 +33,9 @@ const Iqtisod = () => {
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
-                    <h1 className='text-black text-2xl font-medium text-center sm:text-start'>
+                    <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
                         So'nggi yangiliklar
-                    </h1>
+                    </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
