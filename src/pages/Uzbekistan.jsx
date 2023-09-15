@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Uzbekistan = () => {
     return (
         <div className="w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5">
-            <div className='mb-7 sm:w-150% sm:mb-0'>
+            <div className='mb-7 sm:w-180% sm:mb-0'>
                 <div className='mb-8'>
                     <h3 className='text-black text-2xl font-medium text-center border-b-2 border-red-500 pb-5 sm:text-start'>
                         O'zbekiston
@@ -45,10 +45,10 @@ const Uzbekistan = () => {
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-lg font-medium">{news.title}</h2>
+                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-base font-medium">{news.date}</p>
-                                        <Link to="#" className="text-black text-base font-medium">{news.detail}</Link>
+                                        <p className="text-black text-sm font-medium">{news.date}</p>
+                                        <Link to="#" className="text-black text-sm font-medium">{news.detail}</Link>
                                     </div>
                                 </div>
                             </li>
