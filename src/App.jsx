@@ -18,6 +18,7 @@ import ConditionOfUse from './pages/ConditionOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Gadgets from './pages/Gadgets';
 import Advertisement from './pages/Advertisement';
+import Detail from './pages/Detail';
 import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
@@ -36,6 +37,13 @@ const App = () => {
         <Route path='/Privacy Policy' element={<PrivacyPolicy />} />
         <Route path='/Gadgets' element={<Gadgets />} />
         <Route path='/Advertisement' element={<Advertisement />} />
+        <Route path='/Uzbekistan/:id' element={<Detail />} />
+        <Route path='/Iqtisod/:id' element={<Detail />} />
+        <Route path='/Moliya/:id' element={<Detail />} />
+        <Route path='/Texnologiyalar/:id' element={<Detail />} />
+        <Route path='/Madaniyat/:id' element={<Detail />} />
+        <Route path='/Sport/:id' element={<Detail />} />
+        <Route path='/Turizm/:id' element={<Detail />} />
         <Route path='*' element={<PageNotFound />} />
       </Route>
     )

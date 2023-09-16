@@ -20,10 +20,10 @@ const Turizm = () => {
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-6 lg:space-y-4'>
                                     <h2 className="text-black text-lg font-medium">{news.title}</h2>
-                                    <p className="text-gray-600 text-sm font-normal">{news.about}</p>
+                                    <p className="text-gray-600 text-sm font-normal">{news.description}</p>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-base font-medium">{news.date}</p>
-                                        <Link to="#" className="text-black text-base font-medium">{news.detail}</Link>
+                                        <Link to={`/Turizm/${news.id}`} className="text-black text-base font-medium">{news.detail}</Link>
                                     </div>
                                 </div>
                             </li>
@@ -48,7 +48,7 @@ const Turizm = () => {
                                     <h2 className="text-black text-sm font-medium">{news.title}</h2>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to="#" className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <Link to={`/Turizm/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
                                     </div>
                                 </div>
                             </li>
