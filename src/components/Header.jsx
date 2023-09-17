@@ -1,19 +1,53 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from '../assets/logo.png';
 import { Link, NavLink } from 'react-router-dom';
+import '../language/language';
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Header = () => {
+    // Tilni o'zgartirish uchun holat va o'zgaruvchilar
     const [navbar, setNavbar] = useState(false);
+    const [selectedLanguage, setSelectedLanguage] = useState(
+        localStorage.getItem("selectedLanguage") || "uz"
+    );
+
+    // Til nomlarini va kodlarini saqlaydigan massiv
+    const languages = [
+        { code: "uz", name: "O'z" },
+        { code: "en", name: "En" },
+        { code: "ru", name: "Ру" },
+    ];
+
+    // Tilni o'zgartirish funksiyasi
+    const changeLanguage = (languageCode) => {
+        setSelectedLanguage(languageCode);
+        i18next.changeLanguage(languageCode);
+
+        // Tanlangan tilni local storage ga saqlash
+        localStorage.setItem("selectedLanguage", languageCode);
+    };
+
+    const { t } = useTranslation();
+
+    useEffect(() => {
+        // Sayt o'zi yangilanganida local storage dan tilni o'qib olish
+        const savedLanguage = localStorage.getItem("selectedLanguage");
+        if (savedLanguage) {
+            setSelectedLanguage(savedLanguage);
+            i18next.changeLanguage(savedLanguage);
+        }
+    }, []);
 
     return (
         <header className="w-full bg-gray-800 py-3 fixed top-0 right-0 z-10">
-            <div className="w-full justify-between px-5 mx-auto lg:max-w-7xl md:items-center md:flex">
+            <div className="w-full justify-between px-5 mx-auto lg:max-w-7xl lg:items-center lg:flex">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:block">
+                    <div className="flex items-center justify-between py-3 lg:block">
                         <Link to='/'>
                             <img className="w-36" src={logo} alt="logo" />
                         </Link>
-                        <div className="md:hidden">
+                        <div className="lg:hidden">
                             <button
                                 className="p-2 text-white rounded-md outline-none"
                                 onClick={() => setNavbar(!navbar)}
@@ -53,33 +87,49 @@ const Header = () => {
                 </div>
                 <div>
                     <nav
-                        className={`w-full h-screen flex justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 md:h-auto ${navbar ? "block" : "hidden"
+                        className={`w-full h-screen flex justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 lg:h-auto ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="text-white text-base font-medium items-center justify-center space-y-8 md:flex md:space-x-4 md:space-y-0">
+                        <ul className="text-white text-base font-medium items-center justify-center space-y-8 lg:flex lg:space-x-4 lg:space-y-0">
                             <li>
-                                <NavLink to='/' className='hover:text-red-500'>O'zbekiston</NavLink>
+                                <NavLink to='/' className='hover:text-red-500'>{t("o'zbekiston")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Iqtisod' className='hover:text-red-500'>Iqtisod</NavLink>
+                                <NavLink to='/Iqtisod' className='hover:text-red-500'>{t("iqtisod")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Moliya' className='hover:text-red-500'>Moliya</NavLink>
+                                <NavLink to='/Moliya' className='hover:text-red-500'>{t("moliya")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Texnologiyalar' className='hover:text-red-500'>Texnologiyalar</NavLink>
+                                <NavLink to='/Texnologiyalar' className='hover:text-red-500'>{t("texnologiyalar")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Madaniyat' className='hover:text-red-500'>Madaniyat</NavLink>
+                                <NavLink to='/Madaniyat' className='hover:text-red-500'>{t("madaniyat")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Sport' className='hover:text-red-500'>Sport</NavLink>
+                                <NavLink to='/Sport' className='hover:text-red-500'>{t("sport")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Turizm' className='hover:text-red-500'>Turizm</NavLink>
+                                <NavLink to='/Turizm' className='hover:text-red-500'>{t("turizm")}</NavLink>
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div>
+                    <div className="flex items-center justify-center space-x-5">
+                        <select
+                            id="languageSelect"
+                            className="py-1 px-2 bg-white text-gray-800 rounded outline-none"
+                            value={selectedLanguage}
+                            onChange={(e) => changeLanguage(e.target.value)}
+                        >
+                            {languages.map((lang) => (
+                                <option key={lang.code} value={lang.code}>
+                                    {lang.name}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
                 </div>
             </div>
         </header>

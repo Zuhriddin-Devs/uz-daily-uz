@@ -1,3 +1,5 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -6,6 +8,8 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 
 function Footer() {
+    const { t } = useTranslation();
+
     const iconsTab = [
         { icon: <FaFacebookF />, link: 'https://www.facebook.com/UzDaily.uz/?locale=ru_RU' },
         { icon: <AiOutlineTwitter />, link: 'https://twitter.com/UzDailycom' },
@@ -26,7 +30,7 @@ function Footer() {
                             />
                         </Link>
                         <p className="text-base font-medium text-white">
-                            Hamma huquqlar himoyalangan. UzDaily.uz Internet nashri OAB sifatida 0601 raqami bilan 28.10.2009 - yil davlat ro'yxatidan o'tgan. Hamma xizmatlar litsenziyalangan, mahsulotlar esa sertifikatlarga ega.
+                            {t("footer.about")}
                         </p>
                         <div className="flex gap-7 text-lg text-gray-800 justify-center md:justify-start">
                             {iconsTab.map(({ icon, link }, index) => {
@@ -49,22 +53,22 @@ function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-8 relative">
-                        <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">Biz haqimizda</p>
+                        <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">{t("footer.links.title")}</p>
 
                         <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
-                            About Us
+                            {t("footer-link-1")}
                         </Link>
                         <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
-                            Condition of Use
+                            {t("footer-link-2")}
                         </Link>
                         <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
-                            Privacy Policy
+                            {t("footer-link-3")}
                         </Link>
                         <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
-                            Gadgets
+                            {t("footer-link-4")}
                         </Link>
                         <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
-                            Advertisement
+                            {t("footer-link-5")}
                         </Link>
                     </div>
 
