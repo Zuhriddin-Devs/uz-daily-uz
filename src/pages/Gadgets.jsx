@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../assets/data';
 import { Link } from 'react-router-dom';
+import uzDailyApkImage from '../assets/uzDailyApk.png';
 
 const Gadgets = () => {
     return (
@@ -10,20 +11,44 @@ const Gadgets = () => {
                     Gadgets
                 </h3>
                 <p>
-                    <span className='block text-lg font-normal text-black mb-5'>
-                        Uzdaily axborot resurslarining rasmiy yangiliklar dasturi. Yangiliklar tasmasi muntazam ravishda yangilanib boriladi.
-                    </span>
-                    <span className='block text-base font-normal text-black mb-20'>
-                        <Link to='http://uzdaily.uz/apps/app-release-rus.apk' download>
-                            Android qurilmalari uchun rus tilidagi dasturi
-                        </Link>
-                    </span>
-                    <span className='block text-base font-normal text-black'>
-                        <Link to='http://uzdaily.uz/apps/app-release-eng.apk' download>
-                            Android qurilmalari uchun ingliz tilidagi dasturi
-                        </Link>
+                    <span className='block text-lg font-normal text-black mb-7'>
+                        Uzdaily axborot resurslarining rasmiy yangiliklar dasturi. Yangiliklar tasmasi muntazam ravishda yangilanib boriladi:
                     </span>
                 </p>
+                <div className='w-full grid md:grid-cols-2 gap-7'>
+                    <div className='bg-white overflow-hidden rounded shadow-lg'>
+                        <div className="bg-gray-800 rounded overflow-hidden shadow-lg">
+                            <div>
+                                <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64" />
+                            </div>
+                            <div className='h-48 p-5 flex flex-col justify-between'>
+                                <div>
+                                    <h3 className="font-bold text-lg text-white">UzDaily apk ENG ⬇️</h3>
+                                </div>
+                                <div>
+                                    <Link to='http://uzdaily.uz/apps/app-release-eng.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
+                                        YUKLAB OLISH
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bg-gray-800 overflow-hidden rounded shadow-lg">
+                        <div>
+                            <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64" />
+                        </div>
+                        <div className='h-48 p-5 flex flex-col justify-between'>
+                            <div>
+                                <h3 className="font-bold text-lg text-white">UzDaily apk RUS ⬇️</h3>
+                            </div>
+                            <div>
+                                <Link to='http://uzdaily.uz/apps/app-release-rus.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
+                                    YUKLAB OLISH
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
