@@ -30,7 +30,7 @@ const Advertisement = () => {
                                     <h2 className="text-black text-sm font-medium">{news.title}</h2>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to="#" className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <Link to={`/Advertising/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
                                     </div>
                                 </div>
                             </li>

@@ -33,7 +33,7 @@ const App = () => {
         <Route path='/Sport' element={<Sport />} />
         <Route path='/Turizm' element={<Turizm />} />
         <Route path='/About Us' element={<AboutUs />} />
-        <Route path='/Condition Of Use' element={<ConditionOfUse />} />
+        <Route path='/Condition of Use' element={<ConditionOfUse />} />
         <Route path='/Privacy Policy' element={<PrivacyPolicy />} />
         <Route path='/Gadgets' element={<Gadgets />} />
         <Route path='/Advertisement' element={<Advertisement />} />
@@ -44,6 +44,11 @@ const App = () => {
         <Route path='/Madaniyat/:id' element={<Detail />} />
         <Route path='/Sport/:id' element={<Detail />} />
         <Route path='/Turizm/:id' element={<Detail />} />
+        <Route path='/About Us/:id' element={<Detail />} />
+        <Route path='/Condition of Use/:id' element={<Detail />} />
+        <Route path='/Privacy Policy/:id' element={<Detail />} />
+        <Route path='/Gadgets/:id' element={<Detail />} />
+        <Route path='/Advertising/:id' element={<Detail />} />
         <Route path='*' element={<PageNotFound />} />
       </Route>
     )
