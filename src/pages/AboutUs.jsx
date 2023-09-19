@@ -1,53 +1,53 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import data from '../assets/data';
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
+    const { t } = useTranslation();
+
     return (
         <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>
             <div className='mb-7 space-y-5 sm:w-180% sm:mb-0'>
-                <h3 className='text-3xl font-medium text-black'>
-                    About Us
-                </h3>
+                <h3 className='text-3xl font-medium text-black'>{t("about-us-title")}</h3>
                 <p className='text-lg font-normal text-gray-800'>
-                    <strong className='text-base font-bold text-black'>Uzbekistan Daily (UzDaily.com)</strong> provides essential business news and information on Uzbekistan and some feeds on other Central Asian states.
+                    <strong className='text-base font-bold text-black'>
+                        {t("about-us-sub-title")}
+                    </strong> {t("about-us-description-1")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    UzDaily.com unites professionals, who have extended experience work in Uzbek media, including in Internet media.
+                    {t("about-us-description-2")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    Uzbekistan Press and Information Agency registered Uzbekistan Daily as Internet media outlet and issued Registration Certificate No. 0601 from 28 October 2009.
+                    {t("about-us-description-3")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    For further information please feel free to contact us at:
+                    {t("about-us-contact-info")}
                 </p>
                 <p className='text-lg font-normal text-gray-80'>
                     <strong className='text-base font-bold text-black'>
-                        Private Enterprise â€œDAILY MEDIAâ€
+                        {t("about-us-company-name")}
                     </strong>
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        Address:
-                    </strong>
-                    Yunusabad 12-27-73
-                    <br />
-                    Tashkent, 100180, Uzbekistan
+                        {t("about-us-address")}
+                    </strong> {t("about-us-address-details")}
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        Tel:
+                        {t("about-us-tel")}
                     </strong>
-                    +998 90 938 83 38
+                    {t("about-us-tel-number")}
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        Email:
+                        {t("about-us-email")}
                     </strong>
-                    <Link to='/'>info@uzdaily.com</Link>
+                    <Link to='mailto:info@uzdaily.com'>{t("about-us-email-link")}</Link>
                 </p>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        So'nggi yangiliklar
+                        {t("latest news")}
                     </h3>
                 </div>
                 <div>
