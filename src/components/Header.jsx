@@ -124,7 +124,7 @@ const Header = () => {
                             onChange={(e) => changeLanguage(e.target.value)}
                         >
                             {languages.map((lang) => (
-                                <option key={lang.code} value={lang.code}>
+                                <option key={lang.code} value={lang.code} className="bg-gray-800 text-white">
                                     {lang.name}
                                 </option>
                             ))}
