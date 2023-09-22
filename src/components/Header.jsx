@@ -116,7 +116,7 @@ const Header = () => {
                     </nav>
                 </div>
                 <div>
-                    <div className="flex items-center justify-center space-x-5">
+                    <div className="flex items-center justify-start space-x-5">
                         <select
                             id="languageSelect"
                             className="py-1 px-2 bg-white text-gray-800 rounded outline-none"
