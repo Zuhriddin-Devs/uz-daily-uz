@@ -13,27 +13,27 @@ const Advertisement = () => {
                     {t('advertisement')}
                 </h3>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t("this page is under development. please contact us at (+998 90) 915 10 34 with any questions")}
+                    {t("advertisement_details")}
                 </p>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        {t('latest news')}
+                        {t('latest_news')}
                     </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-5'>
+                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
+                                    <h2 className="text-black text-sm font-medium">{t(news.title)}</h2>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to={`/Advertising/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/Advertising/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

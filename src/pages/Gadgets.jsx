@@ -15,7 +15,7 @@ const Gadgets = () => {
                 </h3>
                 <p>
                     <span className='block text-lg font-normal text-black mb-7'>
-                        {t("the article, which is the official program of uzdaily information resources, is included in the site of tishkay.net. new feed is updated regularly")}
+                        {t("gadgets_details")}
                     </span>
                 </p>
                 <div className='w-full grid md:grid-cols-2 gap-7'>
@@ -26,11 +26,11 @@ const Gadgets = () => {
                             </div>
                             <div className='h-48 p-5 flex flex-col justify-between'>
                                 <div>
-                                    <h3 className="font-bold text-lg text-white">{t("uzdaily english apk")}</h3>
+                                    <h3 className="font-bold text-lg text-white">{t("uzdaily_english_apk")}</h3>
                                 </div>
                                 <div>
                                     <Link to='http://uzdaily.uz/apps/app-release-eng.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
-                                        {t('download')}
+                                        {t('download_apk')}
                                     </Link>
                                 </div>
                             </div>
@@ -42,11 +42,11 @@ const Gadgets = () => {
                         </div>
                         <div className='h-48 p-5 flex flex-col justify-between'>
                             <div>
-                                <h3 className="font-bold text-lg text-white">{t('uzdaily russian apk')}</h3>
+                                <h3 className="font-bold text-lg text-white">{t('uzdaily_russian_apk')}</h3>
                             </div>
                             <div>
                                 <Link to='http://uzdaily.uz/apps/app-release-rus.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
-                                    {t('download')}
+                                    {t('download_apk')}
                                 </Link>
                             </div>
                         </div>
@@ -56,21 +56,21 @@ const Gadgets = () => {
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        {t('latest news')}
+                        {t('latest_news')}
                     </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-5'>
+                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
+                                    <h2 className="text-black text-sm font-medium">{t(news.title)}</h2>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to={`/Gadgets/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/Gadgets/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

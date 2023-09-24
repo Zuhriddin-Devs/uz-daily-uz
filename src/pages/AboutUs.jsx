@@ -9,59 +9,59 @@ const AboutUs = () => {
     return (
         <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>
             <div className='mb-7 space-y-5 sm:w-180% sm:mb-0'>
-                <h3 className='text-3xl font-medium text-black'>{t("about-us-title")}</h3>
+                <h3 className='text-3xl font-medium text-black'>{t("about_us_title")}</h3>
                 <p className='text-lg font-normal text-gray-800'>
                     <strong className='text-base font-bold text-black'>
-                        {t("about-us-sub-title")}
-                    </strong> {t("about-us-description-1")}
+                        Uzbekistan Daily (UzDaily.com)
+                    </strong> {t("about_us_description_1")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t("about-us-description-2")}
+                    {t("about_us_description_2")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t("about-us-description-3")}
+                    {t("about_us_description_3")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t("about-us-contact-info")}
+                    {t("about_us_contact_info")}
                 </p>
                 <p className='text-lg font-normal text-gray-80'>
                     <strong className='text-base font-bold text-black'>
-                        {t("about-us-company-name")}
+                        {t("about_us_company_name")}
                     </strong>
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        {t("about-us-address")}
-                    </strong> {t("about-us-address-details")}
+                        {t("about_us_address")}
+                    </strong> {t("about_us_address_details")}
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        {t("about-us-tel")}
+                        {t("about_us_tel")}
                     </strong>
-                    {t("about-us-tel-number")}
+                    +998 90 938 83 38
                     <br />
                     <strong className='text-base font-bold text-black mr-2'>
-                        {t("about-us-email")}
+                        {t("about_us_email")}
                     </strong>
-                    <Link to='mailto:info@uzdaily.com'>{t("about-us-email-link")}</Link>
+                    <Link to='mailto:info@uzdaily.com'>info@uzdaily.com</Link>
                 </p>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        {t("latest news")}
+                        {t("latest_news")}
                     </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-5'>
+                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
+                                    <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to={`/About Us/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/About Us/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

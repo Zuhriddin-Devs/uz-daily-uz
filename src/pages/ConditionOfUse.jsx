@@ -10,156 +10,156 @@ const ConditionOfUse = () => {
         <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>
             <div className='mb-7 space-y-5 sm:w-180% sm:mb-0'>
                 <h3 className='text-3xl font-medium text-black'>
-                    {t('condition of use')}
+                    {t('condition_of_use')}
                 </h3>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('terms of use intro')}
+                    {t('terms_of_use_intro')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('acceptance of terms through registration and use')}
+                    {t('acceptance_of_terms_through_registration_and_use')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('terms of use agreement')}
+                    {t('terms_of_use_agreement')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('registration and security')}
+                    {t('registration_and_security')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('registration and security details')}
+                    {t('registration_and_security_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('links to other web sites and services')}
+                    {t('links_to_other_web_sites_and_services')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('links to other sites agreement')}
+                    {t('links_to_other_sites_agreement')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('third party providers')}
+                    {t('third_party_providers')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('third party providers details')}
+                    {t('third_party_providers_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('proprietary rights')}
+                    {t('proprietary_rights')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('proprietary rights details')}
+                    {t('proprietary_rights_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
                     {t('copyright')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('copyright details')}
+                    {t('copyright_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('trademark notice')}
+                    {t('trademark_notice')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('trademark notice details')}
+                    {t('trademark_notice_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t("user's grant of limited license")}
+                    {t("users_grant_of_limited_license")}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('user license details')}
+                    {t('user_license_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('disclaimer of warranties')}
+                    {t('disclaimer_of_warranties')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('disclaimer of warranties details')}
+                    {t('disclaimer_of_warranties_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('limitation of liability')}
+                    {t('limitation_of_liability')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('limitation of liability details')}
+                    {t('limitation_of_liability_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
                     {t('indemnification')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('indemnification details')}
+                    {t('indemnification_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('third parties users')}
+                    {t('third_parties_users')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('third parties users details')}
+                    {t('third_parties_users_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('use of site')}
+                    {t('use_of_site')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('use of site details')}
+                    {t('use_of_site_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('rules of user conduct')}
+                    {t('rules_of_user_conduct')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('rules of user conduct details')}
+                    {t('rules_of_user_conduct_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('user comments, feedback and other submissions')}
+                    {t('user_comments_feedback_and_other_submissions')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('user comments details')}
+                    {t('user_comments_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('uzdaily.com is not an investment advisor')}
+                    {t('uzdaily_com_is_not_an_investment_advisor')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('investment advisor disclaimer')}
+                    {t('investment_advisor_disclaimer')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('international use')}
+                    {t('international_use')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('international use agreement')}
+                    {t('international_use_agreement')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('choice of law and forum')}
+                    {t('choice_of_law_and_forum')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('choice of law and forum agreement')}
+                    {t('choice_of_law_and_forum_agreement')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('severability and integration')}
+                    {t('severability_and_integration')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('severability and integration agreement')}
+                    {t('severability_and_integration_agreement')}
                 </p>
                 <p className='text-lg font-medium text-black'>
                     {t('termination')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('termination details')}
+                    {t('termination_details')}
                 </p>
                 <p className='text-lg font-medium text-black'>
-                    {t('how to contact us')}
+                    {t('how_to_contact_us')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('contact us details')}
+                    {t('contact_us_details')}
                 </p>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        {t('latest news')}
+                        {t('latest_news')}
                     </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-5'>
+                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
+                                    <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to={`/Condition of Use/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/Condition of Use/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

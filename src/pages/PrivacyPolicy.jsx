@@ -10,93 +10,93 @@ const PrivacyPolicy = () => {
         <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>
             <div className='mb-7 space-y-5 sm:w-180% sm:mb-0'>
                 <h3 className='text-3xl font-medium text-black'>
-                    {t('privacy policy')}
+                    {t('privacy_policy')}
                 </h3>
                 <p className='text-lg font-normal text-gray-800'>
-                    <b className='text-base font-bold text-black'>{t('uzdaily.com')}</b> {t('takes the privacy of its users seriously. we are committed to safeguarding the privacy of our users while providing a personalised and valuable service. this privacy policy statement explains the data processing practices of uzdaily.com. if you have any requests concerning your personal information or any queries with regard to these practices please contact us by e-mail at info@uzdaily.com')}
+                    <b className='text-base font-bold text-black'>Uzdaily.com</b> {t('privacy_policy_details')}
                 </p>
                 <p>
                     <b className='text-lg font-medium text-black'>
-                        {t('information collected')}
+                        {t('information_collected')}
                     </b>
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('personal information is collected by uzdaily.com. we collect personal information from you through the use of enquiry and registration forms and every time you e-mail us your details')}
+                    {t('information_collected_details_1')}
                     <br />
                     <br />
-                    {t('we also collect information automatically about your visit to our site. the information obtained in this way, which includes demographic data and browsing patterns, is only used in aggregate form')}
+                    {t('information_collected_details_2')}
                 </p>
                 <p>
                     <b className='text-lg font-medium text-black'>
-                        {t('use and disclosure of personal information')}
+                        {t('use_and_disclosure_of_personal_information')}
                     </b>
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('we process personal information collected via uzdaily.com for the purposes of')}
+                    {t('we_process_personal_information_collected_via_uzdaily_com_for_the_purposes_of')}
                 </p>
                 <ul className='text-lg font-normal text-gray-800 list-disc pl-12'>
                     <li>
-                        {t('providing a personalised service')}
+                        {t('personal_information_1')}
                     </li>
                     <li>
-                        {t('conducting market research surveys')}
+                        {t('personal_information_2')}
                     </li>
                     <li>
-                        {t('running competitions and')}
+                        {t('personal_information_3')}
                     </li>
                     <li>
-                        {t('providing you with information about products and services we offer')}
+                        {t('personal_information_4')}
                     </li>
                 </ul>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('if you wish to receive information about our products or services, about uzdaily.com or information from other carefully selected organisations, please tick the appropriate box on the registration form')}
+                    {t('personal_information_details_1')}
                     <br />
-                    {t('we may also disclose your information to business partners and third party suppliers we engage to provide services which involve processing data on our behalf or in accordance with a properly executed court order')}
+                    {t('personal_information_details_2')}
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('we also use information in aggregate form (so that no individual user is identified)')}
+                    {t('information_in_aggregate')}
                 </p>
                 <ul className='text-lg font-normal text-gray-800 list-disc pl-12'>
                     <li>
-                        {t('to build up marketing profiles')}
+                        {t('aggregate_1')}
                     </li>
                     <li>
-                        {t('to aid strategic development')}
+                        {t('aggregate_2')}
                     </li>
                     <li>
-                        {t('to manage our relationship with advertisers and')}
+                        {t('aggregate_3')}
                     </li>
                     <li>
-                        {t('to audit usage of the site')}
+                        {t('aggregate_4')}
                     </li>
                 </ul>
                 <p>
                     <b className='text-lg font-medium text-black'>
-                        {t('internet-based transfers')}
+                        {t('internet_based_transfers')}
                     </b>
                 </p>
                 <p className='text-lg font-normal text-gray-800'>
-                    {t('given that the Internet is a global environment, using the Internet to collect and process personal data necessarily involves the transmission of data on an international basis. therefore, by browsing the uzdaily.com site and communicating electronically with us you acknowledge and agree to our processing of personal data in this way')}
+                    {t('internet_based_transfers_details')}
                 </p>
             </div>
             <div className='w-auto'>
                 <div className='mb-5'>
                     <h3 className='text-black text-2xl font-medium text-center sm:text-start'>
-                        {t("latest news")}
+                        {t('latest_news')}
                     </h3>
                 </div>
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-5'>
+                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
                                     <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h2 className="text-black text-sm font-medium">{news.title}</h2>
+                                    <h2 className="text-black text-sm font-medium">{t(news.title)}</h2>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-sm font-medium">{news.date}</p>
-                                        <Link to={`/Privacy Policy/${news.id}`} className="text-black text-sm font-medium">{news.detail}</Link>
+                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/Privacy Policy/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

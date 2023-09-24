@@ -1,37 +1,30 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from '../assets/logo.png';
 import { Link, NavLink } from 'react-router-dom';
-import '../language/language';
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
 const Header = () => {
-    // Tilni o'zgartirish uchun holat va o'zgaruvchilar
     const [navbar, setNavbar] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState(
         localStorage.getItem("selectedLanguage") || "uz"
     );
 
-    // Til nomlarini va kodlarini saqlaydigan massiv
     const languages = [
         { code: "uz", name: "O'z" },
         { code: "en", name: "En" },
         { code: "ru", name: "Ру" },
     ];
 
-    // Tilni o'zgartirish funksiyasi
     const changeLanguage = (languageCode) => {
         setSelectedLanguage(languageCode);
         i18next.changeLanguage(languageCode);
-
-        // Tanlangan tilni local storage ga saqlash
         localStorage.setItem("selectedLanguage", languageCode);
     };
 
     const { t } = useTranslation();
 
     useEffect(() => {
-        // Sayt o'zi yangilanganida local storage dan tilni o'qib olish
         const savedLanguage = localStorage.getItem("selectedLanguage");
         if (savedLanguage) {
             setSelectedLanguage(savedLanguage);
@@ -87,12 +80,11 @@ const Header = () => {
                 </div>
                 <div>
                     <nav
-                        className={`w-full h-screen flex justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 lg:h-auto ${navbar ? "block" : "hidden"
-                            }`}
+                        className={`w-full h-screen flex justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 lg:h-auto ${navbar ? "block" : "hidden"}`}
                     >
                         <ul className="text-white text-base font-medium items-center justify-center space-y-8 lg:flex lg:space-x-4 lg:space-y-0">
                             <li>
-                                <NavLink to='/' className='hover:text-red-500'>{t("o'zbekiston")}</NavLink>
+                                <NavLink to='/' className='hover:text-red-500'>{t("uzbekistan")}</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/Iqtisod' className='hover:text-red-500'>{t("iqtisod")}</NavLink>

@@ -30,7 +30,7 @@ function Footer() {
                             />
                         </Link>
                         <p className="text-base font-medium text-white">
-                            {t("footer.about")}
+                            {t("footer_about")}
                         </p>
                         <div className="flex gap-7 text-lg text-gray-800 justify-center md:justify-start">
                             {iconsTab.map(({ icon, link }, index) => {
@@ -53,22 +53,22 @@ function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-8 relative">
-                        <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">{t("footer.links.title")}</p>
+                        <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">{t("footer_links_title")}</p>
 
                         <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer-link-1")}
+                            {t("footer_link_1")}
                         </Link>
                         <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer-link-2")}
+                            {t("footer_link_2")}
                         </Link>
                         <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer-link-3")}
+                            {t("footer_link_3")}
                         </Link>
                         <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer-link-4")}
+                            {t("footer_link_4")}
                         </Link>
                         <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer-link-5")}
+                            {t("footer_link_5")}
                         </Link>
                     </div>
 
