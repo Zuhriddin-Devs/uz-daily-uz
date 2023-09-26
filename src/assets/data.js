@@ -740,7 +740,7 @@ const data = () => [
         title: "new_card_title_66",
         description: "new_card_description_66",
         date: "27/08/2022",
-        detail: "Batafsil",
+        detail: "batafsil",
         content: "new_card_content_66",
     },
     {
