@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../assets/data';
 import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Detail = () => {
@@ -14,6 +15,10 @@ const Detail = () => {
     };
 
     const { t } = useTranslation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5">

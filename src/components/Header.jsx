@@ -20,6 +20,7 @@ const Header = () => {
         setSelectedLanguage(languageCode);
         i18next.changeLanguage(languageCode);
         localStorage.setItem("selectedLanguage", languageCode);
+        window.scrollTo(0, 0);
     };
 
     const { t } = useTranslation();

@@ -1,11 +1,16 @@
 import React from 'react';
 import data from '../assets/data';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import uzDailyApkImage from '../assets/img/UzDailyAPK.png';
 import { useTranslation } from 'react-i18next';
 
 const Gadgets = () => {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>

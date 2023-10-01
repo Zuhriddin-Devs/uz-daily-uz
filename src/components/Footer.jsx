@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -9,6 +10,10 @@ import logo from '../assets/logo.png';
 
 function Footer() {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const iconsTab = [
         { icon: <FaFacebookF />, link: 'https://www.facebook.com/UzDaily.uz/?locale=ru_RU' },
