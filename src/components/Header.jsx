@@ -33,12 +33,17 @@ const Header = () => {
         }
     }, []);
 
+    // Bu funksiya modalni yopib qo'yish uchun
+    const closeNavbar = () => {
+        setNavbar(false);
+    };
+
     return (
         <header className="w-full bg-gray-800 py-3 fixed top-0 right-0 z-10">
             <div className="w-full justify-between px-5 mx-auto lg:max-w-7xl lg:items-center lg:flex">
                 <div>
                     <div className="flex items-center justify-between py-3 lg:block">
-                        <Link to='/'>
+                        <Link to='/' onClick={closeNavbar}>
                             <img className="w-36" src={logo} alt="logo" />
                         </Link>
                         <div className="lg:hidden">
@@ -85,25 +90,25 @@ const Header = () => {
                     >
                         <ul className="text-white text-base font-medium items-center justify-center space-y-8 lg:flex lg:space-x-4 lg:space-y-0">
                             <li>
-                                <NavLink to='/' className='hover:text-red-500'>{t("uzbekistan")}</NavLink>
+                                <NavLink to='/' onClick={closeNavbar} className='hover:text-red-500'>{t("uzbekistan")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Iqtisod' className='hover:text-red-500'>{t("iqtisod")}</NavLink>
+                                <NavLink to='/Iqtisod' onClick={closeNavbar} className='hover:text-red-500'>{t("iqtisod")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Moliya' className='hover:text-red-500'>{t("moliya")}</NavLink>
+                                <NavLink to='/Moliya' onClick={closeNavbar} className='hover:text-red-500'>{t("moliya")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Texnologiyalar' className='hover:text-red-500'>{t("texnologiyalar")}</NavLink>
+                                <NavLink to='/Texnologiyalar' onClick={closeNavbar} className='hover:text-red-500'>{t("texnologiyalar")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Madaniyat' className='hover:text-red-500'>{t("madaniyat")}</NavLink>
+                                <NavLink to='/Madaniyat' onClick={closeNavbar} className='hover:text-red-500'>{t("madaniyat")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Sport' className='hover:text-red-500'>{t("sport")}</NavLink>
+                                <NavLink to='/Sport' onClick={closeNavbar} className='hover:text-red-500'>{t("sport")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Turizm' className='hover:text-red-500'>{t("turizm")}</NavLink>
+                                <NavLink to='/Turizm' onClick={closeNavbar} className='hover:text-red-500'>{t("turizm")}</NavLink>
                             </li>
                         </ul>
                     </nav>
