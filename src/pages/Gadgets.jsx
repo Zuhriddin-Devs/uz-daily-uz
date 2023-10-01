@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../assets/data';
 import { Link } from 'react-router-dom';
-import uzDailyApkImage from '../assets/img/uzDailyAPK.png';
+import uzDailyApkImage from '../assets/img/UzDailyAPK.png';
 import { useTranslation } from 'react-i18next';
 
 const Gadgets = () => {
