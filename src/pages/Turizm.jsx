@@ -31,7 +31,7 @@ const Turizm = () => {
                                     <p className="text-gray-600 text-sm font-normal">{t(news.description)}</p>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-base font-medium">{news.date}</p>
-                                        <Link to={`/Uzbekistan/${news.id}`} className="text-black text-base font-medium">{t(news.detail)}</Link>
+                                        <Link to={`/Turizm/${news.id}`} className="text-black text-base font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

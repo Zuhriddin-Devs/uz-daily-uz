@@ -75,7 +75,7 @@ const Gadgets = () => {
                                     <h2 className="text-black text-sm font-medium">{t(news.title)}</h2>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-xs font-medium">{news.date}</p>
-                                        <Link to={`/Gadgets/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
+                                        <Link to={`/Uzbekistan/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>

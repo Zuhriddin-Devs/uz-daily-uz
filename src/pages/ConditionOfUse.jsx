@@ -164,7 +164,7 @@ const ConditionOfUse = () => {
                                     <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
                                     <div className='flex justify-between items-center'>
                                         <p className="text-black text-xs font-medium">{news.date}</p>
-                                        <Link to={`/Condition of Use/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
+                                        <Link to={`/Uzbekistan/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
                             </li>
