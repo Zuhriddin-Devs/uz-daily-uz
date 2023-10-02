@@ -14,15 +14,17 @@ const RootLayout = () => {
 
   return (
     <>
-      <Header />
       {isLoading ? (
         <Loader />
       ) : (
-        <main className='w-full bg-gray-200 py-12 mt-32 lg:mt-16'>
-          <Outlet />
-        </main>
+        <>
+          <Header />
+          <main className='w-full bg-gray-200 py-12 mt-32 lg:mt-16'>
+            <Outlet />
+          </main>
+          <Footer />
+        </>
       )}
-      <Footer />
     </>
   );
 };
