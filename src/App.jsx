@@ -21,6 +21,8 @@ import Advertisement from './pages/Advertisement';
 import Detail from './pages/Detail';
 import PageNotFound from './pages/PageNotFound';
 
+import './css/loader.css';
+
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
