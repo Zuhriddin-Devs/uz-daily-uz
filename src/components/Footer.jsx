@@ -23,10 +23,10 @@ function Footer() {
     ];
 
     return (
-        <footer className="w-full bg-gray-800 py-20">
+        <footer className="w-full bg-gray-800 py-16">
             <div className="w-full max-w-7xl mx-auto px-5">
-                <div className="flex justify-between flex-col md:flex-row items-center md:items-start md:gap-[5rem] text-left">
-                    <div className="flex flex-col w-1/2 md:p-0 py-5 gap-8 mb-5 md:mb-0">
+                <div className="flex justify-between flex-col md:flex-row items-start md:gap-[5rem] text-left">
+                    <div className="flex flex-col w-full md:w-1/2 md:p-0 py-5 gap-8 mb-5 md:mb-0">
                         <Link to='/'>
                             <img
                                 src={logo}
@@ -37,7 +37,7 @@ function Footer() {
                         <p className="text-base font-medium text-white">
                             {t("footer_about")}
                         </p>
-                        <div className="flex gap-7 text-lg text-gray-800 justify-center md:justify-start">
+                        <div className="flex gap-7 text-lg text-gray-800 justify-start">
                             {iconsTab.map(({ icon, link }, index) => {
                                 return (
                                     <Link
@@ -52,14 +52,12 @@ function Footer() {
                                 );
                             })}
                         </div>
-                        <p className="text-base font-medium text-white">
+                        <p className="text-base font-medium text-white mb-5 md:mb-0">
                             © {new Date().getFullYear()} UzDaily.uz
                         </p>
                     </div>
 
                     <div className="flex flex-col gap-8 relative">
-                        <p className="text-2xl text-white font-bold border-b-2 border-red-500 pb-2">{t("footer_links_title")}</p>
-
                         <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
                             {t("footer_link_1")}
                         </Link>
