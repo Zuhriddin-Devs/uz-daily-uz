@@ -158,12 +158,18 @@ const ConditionOfUse = () => {
                         {data().slice(0, 3).map((news) => (
                             <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
                                 <div>
-                                    <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
+                                    <Link to={`/Uzbekistan/${news.id}`}>
+                                        <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
+                                    </Link>
                                 </div>
                                 <div className='flex flex-col justify-evenly space-y-7'>
-                                    <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
+                                    <Link to={`/Uzbekistan/${news.id}`}>
+                                        <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
+                                    </Link>
                                     <div className='flex justify-between items-center'>
-                                        <p className="text-black text-xs font-medium">{news.date}</p>
+                                        <Link to={`/Uzbekistan/${news.id}`} className="text-black text-xs font-medium">
+                                            <p className="text-black text-xs font-medium">{news.date}</p>
+                                        </Link>
                                         <Link to={`/Uzbekistan/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
                                     </div>
                                 </div>
