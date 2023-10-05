@@ -9,11 +9,23 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 
 function Footer() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const [selectedLanguage, setSelectedLanguage] = useState(
+        localStorage.getItem('selectedLanguage') || 'uz'
+    );
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    useEffect(() => {
+        i18n.changeLanguage(selectedLanguage);
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+    }, [selectedLanguage]);
+
+    const changeLanguage = (languageCode) => {
+        setSelectedLanguage(languageCode);
+    };
 
     const iconsTab = [
         { icon: <FaFacebookF />, link: 'https://www.facebook.com/UzDaily.uz/?locale=ru_RU' },

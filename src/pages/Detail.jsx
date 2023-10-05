@@ -31,10 +31,6 @@ const Detail = () => {
         setSelectedLanguage(languageCode);
     };
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    });
-
     const navigate = useNavigate();
 
     return (

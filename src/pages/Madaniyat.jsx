@@ -23,10 +23,6 @@ const Madaniyat = () => {
         setSelectedLanguage(languageCode);
     };
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
         <div className="w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5">
             <div className='mb-7 sm:w-180% sm:mb-0'>

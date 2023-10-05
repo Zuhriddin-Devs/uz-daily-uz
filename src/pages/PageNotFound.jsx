@@ -22,10 +22,6 @@ const PageNotFound = () => {
         setSelectedLanguage(languageCode);
     };
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
         <div className="w-full max-w-7xl mx-auto flex justify-center px-5">
             <div className="bg-gray-800 text-center rounded-lg p-10">
