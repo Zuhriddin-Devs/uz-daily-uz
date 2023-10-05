@@ -22,24 +22,22 @@ const Madaniyat = () => {
                 <div>
                     <ul className='grid grid-cols-1 gap-y-7'>
                         {data().slice(40, 50).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
-                                <div>
-                                    <Link to={`/Madaniyat/${news.id}`}>
-                                        <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
-                                    </Link>
-                                </div>
-                                <div className='flex flex-col justify-evenly space-y-6 lg:space-y-4'>
-                                    <Link to={`/Madaniyat/${news.id}`}>
-                                        <h3 className="text-black text-lg font-medium mb-6 lg:mb-4">{t(news.title)}</h3>
-                                        <p className="text-gray-600 text-sm font-normal">{t(news.description)}</p>
-                                    </Link>
-                                    <div className='flex justify-between items-center'>
-                                        <Link to={`/Madaniyat/${news.id}`}>
-                                            <p className="text-black text-base font-medium">{news.date}</p>
-                                        </Link>
-                                        <Link to={`/Madaniyat/${news.id}`} className="text-black text-base font-medium">{t(news.detail)}</Link>
+                            <li key={news.id} className='bg-white shadow-lg rounded-md'>
+                                <Link to={`/Madaniyat/${news.id}`}>
+                                    <div className='grid lg:grid-cols-2 gap-6 p-4'>
+                                        <div>
+                                            <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
+                                        </div>
+                                        <div className='flex flex-col justify-evenly space-y-6 lg:space-y-4'>
+                                            <h3 className="text-black text-lg font-medium">{t(news.title)}</h3>
+                                            <p className="text-gray-600 text-sm font-normal">{t(news.description)}</p>
+                                            <div className='flex justify-between items-center'>
+                                                <p className="text-black text-base font-medium">{news.date}</p>
+                                                <p className="text-black text-base font-medium">{t(news.detail)}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -54,23 +52,21 @@ const Madaniyat = () => {
                 <div>
                     <ul className='grid grid-cols-1 gap-y-4'>
                         {data().slice(0, 3).map((news) => (
-                            <li key={news.id} className='bg-white grid lg:grid-cols-2 gap-6 shadow-lg rounded-md p-4'>
-                                <div>
-                                    <Link to={`/Uzbekistan/${news.id}`}>
-                                        <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
-                                    </Link>
-                                </div>
-                                <div className='flex flex-col justify-evenly space-y-7'>
-                                    <Link to={`/Uzbekistan/${news.id}`}>
-                                        <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
-                                    </Link>
-                                    <div className='flex justify-between items-center'>
-                                        <Link to={`/Uzbekistan/${news.id}`}>
-                                            <p className="text-black text-xs font-medium">{news.date}</p>
-                                        </Link>
-                                        <Link to={`/Uzbekistan/${news.id}`} className="text-black text-xs font-medium">{t(news.detail)}</Link>
+                            <li key={news.id} className='bg-white shadow-lg rounded-md'>
+                                <Link to={`/Uzbekistan/${news.id}`}>
+                                    <div className='grid lg:grid-cols-2 gap-6 p-4'>
+                                        <div>
+                                            <img className='w-full h-full rounded-md' src={news.image} alt={news.alt} />
+                                        </div>
+                                        <div className='flex flex-col justify-evenly space-y-7'>
+                                            <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
+                                            <div className='flex justify-between items-center'>
+                                                <p className="text-black text-xs font-medium">{news.date}</p>
+                                                <p className="text-black text-xs font-medium">{t(news.detail)}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </li>
                         ))}
                     </ul>
