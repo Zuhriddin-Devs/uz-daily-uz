@@ -20,7 +20,7 @@ const Detail = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);
+    });
 
     useEffect(() => {
         i18n.changeLanguage(selectedLanguage);
