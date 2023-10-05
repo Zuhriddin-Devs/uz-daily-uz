@@ -3,15 +3,14 @@ import data from '../assets/data';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import PageNotFound from './PageNotFound';
 
 const Detail = () => {
     const { id } = useParams();
     const newsItem = data().find(news => news.id === parseInt(id));
 
     if (!newsItem) {
-        return <div className='w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5'>
-            <p className='text-2xl font-medium text-red-500 text-center'>{t(yangilik_topilmadi)}</p>
-        </div>
+        return <PageNotFound />
     };
 
     const { t } = useTranslation();

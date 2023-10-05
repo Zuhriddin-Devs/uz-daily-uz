@@ -22,7 +22,6 @@ i18n
                     turizm: "Turizm",
                     // main translation
                     latest_news: "So'nggi yangiliklar",
-                    yangilik_topilmadi: "Yangilik topilmadi :(",
                     batafsil: "Batafsil ➡️",
                     // 1
                     new_card_title_1: "Toshkentda 31-avgust kuni O'zbekiston Respublikasi davlat mustaqilligining 32 yilligi katta tantana qilindi",
@@ -410,7 +409,6 @@ i18n
                     turizm: 'Tourism',
                     // main translation
                     latest_news: "Latest news",
-                    yangilik_topilmadi: "No news found :(",
                     batafsil: "Read more ➡️",
                     // 1
                     new_card_title_1: "On August 31, the 32nd anniversary of the independence of the Republic of Uzbekistan was celebrated in Tashkent",
@@ -797,7 +795,6 @@ i18n
                     turizm: 'Туризм',
                     // main translation
                     latest_news: "Последние новости",
-                    yangilik_topilmadi: "Новостей не найдено :(",
                     batafsil: "Подробнее ➡️",
                     // 1
                     new_card_title_1: "31 августа в Ташкенте отметили 32-ю годовщину независимости Республики Узбекистан.",
