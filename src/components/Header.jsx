@@ -87,7 +87,7 @@ const Header = () => {
                     <nav
                         className={`w-full h-screen pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 lg:h-auto ${navbar ? "block" : "hidden"}`}
                     >
-                        <ul className="h-screen lg:h-auto text-white text-[25px] lg:text-base font-medium space-y-14 flex items-center flex-col lg:flex-row lg:space-x-4 lg:space-y-0">
+                        <ul className="h-screen lg:h-auto text-white text-[20px] lg:text-base font-medium space-y-10 flex items-center flex-col lg:flex-row lg:space-x-4 lg:space-y-0">
                             <li>
                                 <NavLink to='/' onClick={closeNavbar} className='hover:text-red-500'>{t("uzbekistan")}</NavLink>
                             </li>
