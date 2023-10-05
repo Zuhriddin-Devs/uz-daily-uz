@@ -1,11 +1,27 @@
 import React from 'react';
 import data from '../assets/data';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Turizm = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const [selectedLanguage, setSelectedLanguage] = useState(
+        localStorage.getItem('selectedLanguage') || 'uz'
+    );
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
+        i18n.changeLanguage(selectedLanguage);
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+    }, [selectedLanguage]);
+
+    const changeLanguage = (languageCode) => {
+        setSelectedLanguage(languageCode);
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);
