@@ -7,7 +7,7 @@ import i18next from "i18next";
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState(
-        localStorage.getItem("selectedLanguage") || "uz"
+        localStorage.getItem("selectedLanguage")
     );
 
     const languages = [
