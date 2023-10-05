@@ -33,7 +33,6 @@ const Header = () => {
         }
     }, []);
 
-    // Bu funksiya modalni yopib qo'yish uchun
     const closeNavbar = () => {
         setNavbar(false);
     };
