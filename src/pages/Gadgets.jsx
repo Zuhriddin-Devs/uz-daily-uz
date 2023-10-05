@@ -34,7 +34,7 @@ const Gadgets = () => {
                                     <h3 className="font-bold text-lg text-white">{t("uzdaily_english_apk")}</h3>
                                 </div>
                                 <div>
-                                    <Link to='http://uzdaily.uz/apps/app-release-eng.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
+                                    <Link to='https://play.google.com/store/apps/details?id=com.uzdailyenapp.androidnewsapps' target='_blank' className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
                                         {t('download_apk')}
                                     </Link>
                                 </div>
@@ -50,7 +50,7 @@ const Gadgets = () => {
                                 <h3 className="font-bold text-lg text-white">{t('uzdaily_russian_apk')}</h3>
                             </div>
                             <div>
-                                <Link to='http://uzdaily.uz/apps/app-release-rus.apk' download className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
+                                <Link to='https://play.google.com/store/apps/details?id=com.uzdailyruapp.androidnewsapps' target='_blank' className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
                                     {t('download_apk')}
                                 </Link>
                             </div>
