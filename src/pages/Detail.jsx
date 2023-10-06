@@ -37,7 +37,7 @@ const Detail = () => {
         <div className="w-full max-w-7xl sm:flex gap-x-16 justify-center mx-auto px-5">
             <div className='mb-7 space-y-5 sm:w-180% sm:mb-0'>
                 <button onClick={() => navigate(-1)} className='bg-gray-800 text-white rounded p-2'>{t('back')}</button>
-                <img src={newsItem.image} alt={newsItem.alt} className='w-full h-96 rounded-md' />
+                <img src={newsItem.image} alt={newsItem.alt} className='w-full h-auto object-contain rounded-md' />
                 <h3 className='text-2xl font-medium text-black'>{t(newsItem.title)}</h3>
                 <p className='text-lg font-medium text-gray-500'>{newsItem.date}</p>
                 <p className='text-lg font-sm text-black'>{t(newsItem.content)}</p>
