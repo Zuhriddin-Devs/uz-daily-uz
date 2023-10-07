@@ -73,8 +73,8 @@ const Iqtisod = () => {
                                         <div className='flex flex-col justify-evenly space-y-7'>
                                             <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
                                             <div className='flex justify-between items-center'>
-                                                <p className="text-black text-xs font-medium">{news.date}</p>
-                                                <p className="text-black text-xs font-medium">{t(news.detail)}</p>
+                                                <p className="text-black text-base sm:text-xs font-medium">{news.date}</p>
+                                                <p className="text-black text-base sm:text-xs font-medium">{t(news.detail)}</p>
                                             </div>
                                         </div>
                                     </div>
