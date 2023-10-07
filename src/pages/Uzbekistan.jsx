@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../assets/data';
+import { HiArrowRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -45,7 +46,7 @@ const Uzbekistan = () => {
                                             <p className="text-gray-600 text-sm font-normal">{t(news.description)}</p>
                                             <div className='flex justify-between items-center'>
                                                 <p className="text-black text-base font-medium">{news.date}</p>
-                                                <p className="text-black text-base font-medium">{t(news.detail)}</p>
+                                                <p className="text-black text-base font-medium flex items-center">{t(news.detail)} <HiArrowRight className='ml-1' /></p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,7 +75,7 @@ const Uzbekistan = () => {
                                             <h3 className="text-black text-sm font-medium">{t(news.title)}</h3>
                                             <div className='flex justify-between items-center'>
                                                 <p className="text-black text-base sm:text-xs font-medium">{news.date}</p>
-                                                <p className="text-black text-base sm:text-xs font-medium">{t(news.detail)}</p>
+                                                <p className="text-black text-base sm:text-xs font-medium flex items-center">{t(news.detail)} <HiArrowRight className='ml-1' /></p>
                                             </div>
                                         </div>
                                     </div>
