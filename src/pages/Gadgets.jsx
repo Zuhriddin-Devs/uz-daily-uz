@@ -37,13 +37,13 @@ const Gadgets = () => {
                     </span>
                 </p>
                 <div className='w-full grid md:grid-cols-2 gap-7'>
-                    <div className='bg-white overflow-hidden rounded shadow-lg'>
-                        <div className="bg-gray-800 rounded overflow-hidden shadow-lg">
-                            <div>
-                                <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64" />
+                    <div className='bg-gray-800 overflow-hidden rounded shadow-lg'>
+                        <div className="rounded overflow-hidden shadow-lg p-4">
+                            <div className='rounded'>
+                                <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64 rounded" />
                             </div>
-                            <div className='h-48 p-5 flex flex-col justify-between'>
-                                <div>
+                            <div className='h-44 flex flex-col justify-between'>
+                                <div className='my-5'>
                                     <h3 className="font-bold text-lg text-white">{t("uzdaily_english_apk")}</h3>
                                 </div>
                                 <div>
@@ -54,18 +54,21 @@ const Gadgets = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-gray-800 overflow-hidden rounded shadow-lg">
-                        <div>
-                            <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64" />
-                        </div>
-                        <div className='h-48 p-5 flex flex-col justify-between'>
-                            <div>
-                                <h3 className="font-bold text-lg text-white">{t('uzdaily_russian_apk')}</h3>
+                    <div className='bg-gray-800 overflow-hidden rounded shadow-lg'>
+                        <div className="rounded overflow-hidden shadow-lg p-4">
+                            <div className='rounded'>
+                                <img src={uzDailyApkImage} alt="uzDaily-apk-image" className="w-full h-64 rounded" />
                             </div>
-                            <div>
-                                <Link to='https://play.google.com/store/apps/details?id=com.uzdailyruapp.androidnewsapps' target='_blank' className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
-                                    {t('download_apk')}
-                                </Link>
+                            <div className='h-44 flex flex-col justify-between'>
+                                <div className='my-5'>
+                                    <h3 className="font-bold text-lg text-white">{t("uzdaily_russian_apk")}</h3>
+                                </div>
+                                <div>
+                                    <Link to='https://play.google.com/store/apps/details?id=com.uzdailyruapp.androidnewsapps' target='_blank'
+                                        className='block w-full py-2 bg-green-700 text-white font-medium text-center rounded hover:bg-green-600'>
+                                        {t('download_apk')}
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
