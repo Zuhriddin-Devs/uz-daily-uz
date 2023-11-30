@@ -9,6 +9,9 @@ export default {
       width: {
         '180%': '180%',
       },
+      minWidth: {
+        '260px': '260px',
+      },
     },
   },
   plugins: [],
