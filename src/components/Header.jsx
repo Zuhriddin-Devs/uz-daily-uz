@@ -89,25 +89,25 @@ const Header = () => {
                     >
                         <ul className="h-screen lg:h-auto text-white text-[20px] lg:text-base font-medium space-y-11 flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0">
                             <li>
-                                <NavLink to='/' onClick={closeNavbar} className='hover:text-red-500'>{t("uzbekistan")}</NavLink>
+                                <NavLink to='/' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("uzbekistan")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Iqtisod' onClick={closeNavbar} className='hover:text-red-500'>{t("iqtisod")}</NavLink>
+                                <NavLink to='/Iqtisod' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("iqtisod")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Moliya' onClick={closeNavbar} className='hover:text-red-500'>{t("moliya")}</NavLink>
+                                <NavLink to='/Moliya' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("moliya")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Texnologiyalar' onClick={closeNavbar} className='hover:text-red-500'>{t("texnologiyalar")}</NavLink>
+                                <NavLink to='/Texnologiyalar' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("texnologiyalar")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Madaniyat' onClick={closeNavbar} className='hover:text-red-500'>{t("madaniyat")}</NavLink>
+                                <NavLink to='/Madaniyat' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("madaniyat")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Sport' onClick={closeNavbar} className='hover:text-red-500'>{t("sport")}</NavLink>
+                                <NavLink to='/Sport' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("sport")}</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/Turizm' onClick={closeNavbar} className='hover:text-red-500'>{t("turizm")}</NavLink>
+                                <NavLink to='/Turizm' onClick={closeNavbar} className='hover:text-red-500 transition-all duration-200'>{t("turizm")}</NavLink>
                             </li>
                         </ul>
                     </nav>

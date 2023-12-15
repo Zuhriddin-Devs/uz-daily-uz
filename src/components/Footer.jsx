@@ -68,19 +68,19 @@ function Footer() {
                 </div>
 
                 <div className="flex flex-col items-start space-y-8">
-                    <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
+                    <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium transition-all duration-200">
                         {t("footer_link_1")}
                     </Link>
-                    <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
+                    <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium transition-all duration-200">
                         {t("footer_link_2")}
                     </Link>
-                    <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
+                    <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium transition-all duration-200">
                         {t("footer_link_3")}
                     </Link>
-                    <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
+                    <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium transition-all duration-200">
                         {t("footer_link_4")}
                     </Link>
-                    <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
+                    <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium transition-all duration-200">
                         {t("footer_link_5")}
                     </Link>
                 </div>
