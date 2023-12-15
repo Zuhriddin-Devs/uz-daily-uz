@@ -69,7 +69,7 @@ function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-8 relative">
+                    <div className="flex flex-col gap-8">
                         <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
                             {t("footer_link_1")}
                         </Link>
