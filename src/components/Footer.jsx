@@ -38,7 +38,7 @@ function Footer() {
         <footer className="w-full bg-gray-800 py-16">
             <div className="w-full max-w-7xl mx-auto px-5">
                 <div className="flex justify-between flex-col md:flex-row items-start md:gap-[5rem] text-left">
-                    <div className="flex flex-col w-full md:w-1/2 md:p-0 py-5 gap-8 mb-5 md:mb-0">
+                    <div className="flex flex-col w-full md:w-1/2 md:p-0 gap-8 mb-5 md:mb-0">
                         <Link to='/'>
                             <img
                                 src={logo}
