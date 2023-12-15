@@ -36,59 +36,57 @@ function Footer() {
 
     return (
         <footer className="w-full bg-gray-800 py-16">
-            <div className="w-full max-w-7xl mx-auto px-5">
-                <div className="flex justify-between flex-col md:flex-row items-start md:gap-[5rem] text-left">
-                    <div className="flex flex-col w-full md:w-1/2 md:p-0 gap-8 mb-5 md:mb-0">
-                        <Link to='/'>
-                            <img
-                                src={logo}
-                                alt="footer-logo"
-                                className="w-[18rem]"
-                            />
-                        </Link>
-                        <p className="text-base font-medium text-white">
-                            {t("footer_about")}
-                        </p>
-                        <div className="flex gap-7 text-lg text-gray-800 justify-start">
-                            {iconsTab.map(({ icon, link }, index) => {
-                                return (
-                                    <Link
-                                        to={link}
-                                        target="_blank"
-                                        key={index}
-                                        className="text-2xl bg-white p-2 rounded-full hover:bg-blue-500 hover:text-white cursor-pointer"
-                                        style={{ transition: "all 0.3s" }}
-                                    >
-                                        {icon}
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                        <p className="text-base font-medium text-white mb-5 md:mb-0">
-                            © {new Date().getFullYear()} UzDaily.uz
-                        </p>
+            <div className="w-full max-w-7xl flex flex-col items-start justify-between md:flex-row md:gap-20 text-left mx-auto px-5">
+                <div className="flex flex-col w-full md:w-1/2 md:p-0 gap-8 mb-5 md:mb-0">
+                    <Link to='/'>
+                        <img
+                            src={logo}
+                            alt="footer-logo"
+                            className="w-[18rem]"
+                        />
+                    </Link>
+                    <p className="text-base font-medium text-white">
+                        {t("footer_about")}
+                    </p>
+                    <div className="flex gap-7 text-lg text-gray-800 justify-start">
+                        {iconsTab.map(({ icon, link }, index) => {
+                            return (
+                                <Link
+                                    to={link}
+                                    target="_blank"
+                                    key={index}
+                                    className="text-2xl bg-white p-2 rounded-full hover:bg-blue-500 hover:text-white cursor-pointer"
+                                    style={{ transition: "all 0.3s" }}
+                                >
+                                    {icon}
+                                </Link>
+                            );
+                        })}
                     </div>
-
-                    <div className="flex flex-col gap-8">
-                        <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer_link_1")}
-                        </Link>
-                        <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer_link_2")}
-                        </Link>
-                        <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer_link_3")}
-                        </Link>
-                        <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer_link_4")}
-                        </Link>
-                        <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
-                            {t("footer_link_5")}
-                        </Link>
-                    </div>
-
-                    <span></span>
+                    <p className="text-base font-medium text-white mb-5 md:mb-0">
+                        © {new Date().getFullYear()} UzDaily.uz
+                    </p>
                 </div>
+
+                <div className="flex flex-col gap-8">
+                    <Link to='/About Us' className="text-lg hover:text-red-500 text-white font-medium">
+                        {t("footer_link_1")}
+                    </Link>
+                    <Link to='/Condition of Use' className="text-lg hover:text-red-500 text-white font-medium">
+                        {t("footer_link_2")}
+                    </Link>
+                    <Link to='/Privacy Policy' className="text-lg hover:text-red-500 text-white font-medium">
+                        {t("footer_link_3")}
+                    </Link>
+                    <Link to='/Gadgets' className="text-lg hover:text-red-500 text-white font-medium">
+                        {t("footer_link_4")}
+                    </Link>
+                    <Link to='/Advertisement' className="text-lg hover:text-red-500 text-white font-medium">
+                        {t("footer_link_5")}
+                    </Link>
+                </div>
+
+                <span></span>
             </div>
         </footer>
     );
