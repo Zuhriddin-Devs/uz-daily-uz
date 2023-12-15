@@ -42,7 +42,7 @@ function Footer() {
                         <img
                             src={logo}
                             alt="footer-logo"
-                            className="w-[18rem]"
+                            className="w-72 h-auto"
                         />
                     </Link>
                     <p className="text-base font-medium text-white">
