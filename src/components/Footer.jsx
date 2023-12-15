@@ -55,8 +55,7 @@ function Footer() {
                                     to={link}
                                     target="_blank"
                                     key={index}
-                                    className="text-2xl bg-white p-2 rounded-full hover:bg-blue-500 hover:text-white cursor-pointer"
-                                    style={{ transition: "all 0.3s" }}
+                                    className="text-2xl bg-white p-2 rounded-full hover:bg-blue-500 hover:text-white cursor-pointer transition-all duration-300"
                                 >
                                     {icon}
                                 </Link>
