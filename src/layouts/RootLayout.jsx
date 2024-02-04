@@ -16,13 +16,13 @@ const RootLayout = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        <>
+        <div className='flex flex-col justify-between min-h-screen'>
           <Header />
-          <main className='w-full bg-gray-200 py-12 mt-32 lg:mt-16'>
+          <main className='flex items-center grow w-full bg-gray-200 py-12 mt-32 lg:mt-16'>
             <Outlet />
           </main>
           <Footer />
-        </>
+        </div>
       )}
     </>
   );
