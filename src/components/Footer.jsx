@@ -63,7 +63,7 @@ function Footer() {
                         })}
                     </div>
                     <p className="text-base font-medium text-white mb-5 md:mb-0">
-                        © {new Date().getFullYear()} UzDaily.uz
+                        © 2023-{new Date().getFullYear()} UzDaily.uz
                     </p>
                 </div>
 
